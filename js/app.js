@@ -32,7 +32,7 @@ Test this function by hand in the console to get it working, and when you think 
 function multiply(a, b) { //eslint-disable-line
 
     let p = a * b;
-    return [p + 'The product of ' + a + 'and' + b + ' is ' + p + '.' ]
+    return [p ,'The product of ' + a + ' and ' + b + ' is ' + p + '.' ];
 
 }
 

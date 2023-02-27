@@ -30,8 +30,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+
     let p = a * b;
     return [p , 'The product of ' + a + ' and ' + b + ' is ' + p + '.' ];
+=======
+
+    let p = a * b;
+    return [p ,'The product of ' + a + ' and ' + b + ' is ' + p + '.' ];
+
 
 }
 

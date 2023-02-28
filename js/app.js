@@ -106,17 +106,18 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-    let a = testArray[0];
-  let b = testArray[1];
-  let c = testArray[2];
-  let total = multiply(a, b)[0];
-  let finaltotal = multiply(total, c)[0];
-  return[finaltotal, "The numbers " + a + ','+ b + ',' + c + " have a product of " + finaltotal + "."]
+    let a = testArray[0]
+    let b = testArray[1]
+    let c = testArray[2]
+    let total = multiply(testArray[0], testArray[1])[0]
+    let product = multiply(total, testArray[2])[0]
+    console.log
+    return [product, `The numbers ${a},${b},${c} have a product of ${product}.`]
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 

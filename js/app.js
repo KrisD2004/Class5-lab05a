@@ -33,18 +33,16 @@ function multiply(a, b) { //eslint-disable-line
 
     let p = a * b;
     return [p , 'The product of ' + a + ' and ' + b + ' is ' + p + '.' ];
-=======
 
-    let p = a * b;
-    return [p ,'The product of ' + a + ' and ' + b + ' is ' + p + '.' ];
 
+    
 
 }
 
 // Here is the test for multiply(); uncomment it to run it
 
 testMultiply(5,9);
-=======
+
  testMultiply(5,9);
 
 
@@ -90,8 +88,8 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-    let s = sum(testArray[0], testArray[1])
-    let s2 = sum(s, testArray[2])
+    let s = sum(testArray[0], testArray[1])[0]
+    let s2 = sum(s, testArray[2])[0]
     return [s2, `${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${s2} is their sum.`];
 
 }

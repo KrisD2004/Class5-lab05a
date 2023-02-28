@@ -33,12 +33,7 @@ function multiply(a, b) { //eslint-disable-line
 
     let p = a * b;
     return [p , 'The product of ' + a + ' and ' + b + ' is ' + p + '.' ];
-=======
-
-    let p = a * b;
-    return [p ,'The product of ' + a + ' and ' + b + ' is ' + p + '.' ];
-
-
+    
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -107,6 +102,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+    let a = testArray[0];
+  let b = testArray[1];
+  let c = testArray[2];
+  let total = multiply(a, b)[0];
+  let finaltotal = multiply(total, c)[0];
+  return[finaltotal, "The numbers " + a + ','+ b + ',' + c + " have a product of " + finaltotal + "."]
 
 }
 
